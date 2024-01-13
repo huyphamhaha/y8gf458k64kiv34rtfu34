@@ -111,6 +111,7 @@ h2 strong, h1 strong {
     text-align: center;
     margin: 34px auto 0;
     font-size: 1.3rem;
+    font-weight: 500;
 }
 
 .scroll-down-icon{
