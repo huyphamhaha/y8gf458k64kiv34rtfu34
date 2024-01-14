@@ -1,3 +1,18 @@
+/* Tùy chỉnh thanh cuộn */
+::-webkit-scrollbar {
+    width: 7px; /* Chiều rộng của thanh cuộn */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #494b52; /* Màu nền của "nút" thanh cuộn */
+    border-radius: 6px; /* Độ cong góc của "nút" thanh cuộn */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #0a0d13; /* Màu nền của "đường dẫn" thanh cuộn */
+  }
+
+
 *{
     margin: 0;
     padding: 0;
@@ -13,8 +28,9 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 
 :root{
-    --gradient-top: linear-gradient(0deg, rgba(22, 24, 19, 0) 0%, rgba(22, 24, 19, 0.22) 36.98%, rgba(22, 24, 19, 0.47) 70.83%, rgba(22, 24, 19, 0.76) 100%);
-    --gradient-bottom: linear-gradient(180deg, rgba(22, 24, 19, 0) 0%, rgba(22, 24, 19, 0.42) 21.88%, rgba(22, 24, 19, 0.69) 41.67%, rgba(22, 24, 19, 0.9) 61.98%, rgba(22, 24, 19, 0.99) 78.12%, #161813 100%);
+    --gradient-top: linear-gradient(0deg, rgba(22, 24, 19, 0) 0%, rgba(22, 24, 19, 0.1) 36.98%, rgba(22, 24, 19, 0.3) 70.83%, rgba(22, 24, 19, 0.5) 100%);
+--gradient-bottom: linear-gradient(180deg, rgba(22, 24, 19, 0) 0%, rgba(22, 24, 19, 0.2) 21.88%, rgba(22, 24, 19, 0.4) 41.67%, rgba(22, 24, 19, 0.7) 61.98%, rgba(22, 24, 19, 0.8) 78.12%, #161813 100%);
+
     --sphere-gradient-one: radial-gradient(50% 50% at 20% 25%, #686868 0%, #403F3F 35%, #222222 70%, #000000 100%);
     --sphere-gradient-two: radial-gradient(51.04% 51.04% at 18.94% 26.18%, #686868 0%, #403F3F 36.98%, #222222 70.83%, #000000 100%);
     --system-ui: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -145,6 +161,7 @@ h2 strong, h1 strong {
     height: 100%;
     object-fit: cover;
     z-index: -2;
+    transition: opacity 1s ease-in-out;
 }
 
 .background::before, .background::after{
