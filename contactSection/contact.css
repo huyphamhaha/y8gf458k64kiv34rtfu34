@@ -1,8 +1,74 @@
+body {
+    background-image: url(/Img/payment-bg.dd1049bd524ec6121c88.png);
+}
 .container {
-    display: block;
+    background-image: linear-gradient(90deg, rgb(0, 85, 148), rgb(44, 0, 134));
+    background-color: initial;
+    background: linear-gradient(90deg,#5ebbff,#a174ff);
+    border-radius: 8px;
+    padding: 2px;
+    top: 100px;
+    width: 80%;
+
+}
+
+.wrapped {
+    gap: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 50px;
+    background-image: initial;
+    background-color: rgb(33, 36, 37);
+    background: #272a31;
+    border-radius: 6px;
+    padding: 20px;
+    width: 100%;
+}
 
+.inner {
+    width: 75%;
+}
+
+.anotherInner {
+    width: 25%;
+}
+
+.anotherInner p {
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+.anotherInner h1 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.inner input {
+    width: 100%;
+    height: 40px;
+    margin: 10px 0;
+    padding: 5px;
+    background-color: #F0F1F8;
+    border-color: transparent;
+    border-radius: 2px;
+    font-size: 1.05rem;
+}
+
+.getInTouch {
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.confirmButton {
+    margin-top: 5px;
+    padding: 7px;
+    background-color: #181a1b;
+    border:1.5px solid #605a51;
+    border-radius: 7px;
+    color: #dddad5;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    width: 30%;
 }
