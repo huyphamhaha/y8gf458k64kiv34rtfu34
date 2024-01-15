@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
         setTimeout(function () {
             imageElement.src = nextImage;
             imageElement.style.opacity = 1;
-        }, 2000); // 1000 milliseconds = 1 second
+        }, 1000); // 1000 milliseconds = 1 second
     }
 
     setInterval(changeImage, 7000); // 7000 milliseconds = 7 seconds

@@ -43,7 +43,7 @@ html{
 
 body{
     font-family: var(--system-ui);
-    background-color: #0a0d13;
+    background-color: #EFEFE9;
     overflow-x: hidden;
 }
 
@@ -113,6 +113,7 @@ h2 strong, h1 strong {
     justify-content: center;
     align-items: center;
     color: #fff;
+    
 }
 
 .hero-section-title{
@@ -161,7 +162,7 @@ h2 strong, h1 strong {
     height: 100%;
     object-fit: cover;
     z-index: -2;
-    transition: opacity 2s ease-in-out;
+    transition: opacity 1s ease-in;
 }
 
 .background::before, .background::after{
@@ -209,7 +210,7 @@ h2 strong, h1 strong {
     position: relative;
     width: 100%;
     padding: 80px 10vw;
-    color: #fff;
+    color: #0a0d13;
 }
 
 .section-title{
@@ -281,6 +282,7 @@ h2 strong, h1 strong {
 
 .tour-name{
     font-weight: 600;
+    color: #000;
 }
 
 .tour-action{
