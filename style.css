@@ -162,7 +162,7 @@ h2 strong, h1 strong {
     height: 100%;
     object-fit: cover;
     z-index: -2;
-    transition: opacity 1s ease-in;
+    transition: 1s ease-in-out;
 }
 
 .background::before, .background::after{
@@ -217,6 +217,7 @@ h2 strong, h1 strong {
     font-size: 50px;
     font-weight: 700;
     text-align: center;
+    color: #0a0d13;
 }
 
 .section-para{
@@ -229,7 +230,7 @@ h2 strong, h1 strong {
     text-align: center;
     line-height: 25px;
     font-size: 1.2rem;
-    color: #a59d91;
+    color: #494b52;
     font-weight: 500;
 }
 
@@ -436,6 +437,7 @@ h2 strong, h1 strong {
     font-weight: 700;
     width: 500px;
     line-height: 80px;
+    color: #0a0d13;
 }
 
 .book-now-text{
@@ -447,7 +449,7 @@ h2 strong, h1 strong {
     text-align: center;
     line-height: 25px;
     font-size: 1.1rem;
-    color: #a59d91;
+    color: #494b52;
     font-weight: 500;
     text-align: left;
 }
