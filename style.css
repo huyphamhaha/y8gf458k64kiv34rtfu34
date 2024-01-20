@@ -43,7 +43,7 @@ html{
 
 body{
     font-family: var(--system-ui);
-    background-color: #EFEFE9;
+    background-color: #F0EDCF;
     overflow-x: hidden;
 }
 
@@ -162,7 +162,7 @@ h2 strong, h1 strong {
     height: 100%;
     object-fit: cover;
     z-index: -2;
-    transition: 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
 }
 
 .background::before, .background::after{
@@ -230,8 +230,8 @@ h2 strong, h1 strong {
     text-align: center;
     line-height: 25px;
     font-size: 1.2rem;
-    color: #494b52;
-    font-weight: 500;
+    color: #50623A;
+    font-weight: 640;
 }
 
 .tours-container{
@@ -282,8 +282,9 @@ h2 strong, h1 strong {
 }
 
 .tour-name{
-    font-weight: 600;
-    color: #000;
+    font-weight: 700;
+    color: #fff;
+    -webkit-text-stroke: 0.3px #282828;
 }
 
 .tour-action{
@@ -448,9 +449,9 @@ h2 strong, h1 strong {
     display: block;
     text-align: center;
     line-height: 25px;
-    font-size: 1.1rem;
-    color: #494b52;
-    font-weight: 500;
+    font-size: 1.2rem;
+    color: #50623A;
+    font-weight: 600;
     text-align: left;
 }
 
