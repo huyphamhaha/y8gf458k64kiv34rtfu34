@@ -29,7 +29,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 :root{
     --gradient-top: linear-gradient(0deg, rgba(22, 24, 19, 0) 0%, rgba(22, 24, 19, 0.1) 36.98%, rgba(22, 24, 19, 0.3) 70.83%, rgba(22, 24, 19, 0.5) 100%);
---gradient-bottom: linear-gradient(180deg, rgba(22, 24, 19, 0) 0%, rgba(22, 24, 19, 0.2) 21.88%, rgba(22, 24, 19, 0.4) 41.67%, rgba(22, 24, 19, 0.7) 61.98%, rgba(22, 24, 19, 0.8) 78.12%, #161813 100%);
+    --gradient-bottom: linear-gradient(180deg, rgba(22, 24, 19, 0) 0%, rgba(22, 24, 19, 0.1) 21.88%, rgba(22, 24, 19, 0.2) 41.67%, rgba(22, 24, 19, 0.5) 61.98%, rgba(22, 24, 19, 0.6) 78.12%, #161813 100%);
+
 
     --sphere-gradient-one: radial-gradient(50% 50% at 20% 25%, #686868 0%, #403F3F 35%, #222222 70%, #000000 100%);
     --sphere-gradient-two: radial-gradient(51.04% 51.04% at 18.94% 26.18%, #686868 0%, #403F3F 36.98%, #222222 70.83%, #000000 100%);
@@ -43,13 +44,13 @@ html{
 
 body{
     font-family: var(--system-ui);
-    background-color: #F0EDCF;
+    background-color: #fff;
     overflow-x: hidden;
 }
 
 h2 strong, h1 strong {
-    background: -webkit-linear-gradient(45deg, #5ebbff -33%, #a174ff 69%);
-    background-image: linear-gradient(260deg, rgb(0, 36, 167) 0%, rgb(35, 0, 135) 50%, rgb(54, 0, 80) 80%);
+    background: -webkit-linear-gradient(45deg, #f3eb1a -33%, #db2726 69%);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0);
     background-color: rgb(24, 26, 27);
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -57,7 +58,9 @@ h2 strong, h1 strong {
 
 .text-highlight {
     -webkit-text-fill-color: transparent;
-    background: -webkit-linear-gradient(45deg, #5ebbff -33%, #a174ff 69%);
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0);
+    background: -webkit-linear-gradient(45deg, #f3eb1a -33%, #b43620 69%);
     background-color: initial;
     background-clip: text;
 }
@@ -68,13 +71,23 @@ h2 strong, h1 strong {
     left: 0;
     z-index: 9;
     width: 100%;
-    padding: 20px 5vw;
+    padding:15px 5vw;
     font-size: 1.1rem;
     transition: ease 0.3s ;
 }
 
+.navbar a{
+    font-weight: 600;
+}
+
 .navbar.bg{
-    background: #161813;
+    background: #ffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.bg a{
+    color: #808080;
+    font-weight: 650;
 }
 
 .links-container{
@@ -117,6 +130,7 @@ h2 strong, h1 strong {
 }
 
 .hero-section-title{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
     font-weight: 700;
     max-width: 1000px;
     font-size: 4.7rem;
@@ -124,6 +138,7 @@ h2 strong, h1 strong {
 }
 
 .hero-section-sub-heading{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
     max-width: 780px;
     text-align: center;
     margin: 34px auto 0;
@@ -230,8 +245,8 @@ h2 strong, h1 strong {
     text-align: center;
     line-height: 25px;
     font-size: 1.2rem;
-    color: #50623A;
-    font-weight: 640;
+    color: #3d3d3f;
+    font-weight: 500;
 }
 
 .tours-container{
@@ -284,7 +299,7 @@ h2 strong, h1 strong {
 .tour-name{
     font-weight: 700;
     color: #fff;
-    -webkit-text-stroke: 0.3px #282828;
+    -webkit-text-stroke: 0.2px #282828;
 }
 
 .tour-action{
@@ -307,6 +322,7 @@ h2 strong, h1 strong {
 /* services section */
 
 .services-section{
+    background-color: #f6f6f6;
     color: #fff;
     padding: 80px 10vw;
 }
@@ -334,7 +350,10 @@ h2 strong, h1 strong {
     gap: 20px;
     overflow: hidden;
     position: relative;
-    background-image: url(./Img/landing_ellipse_13.4818807a98da32e2ca0a.png);
+    background-image: url(./Img/421104201_762321142617009_1189638150950876417_n.png);
+    background-size: cover; /* Tự động thay đổi kích thước của background image để nó phù hợp với kích thước của thẻ div */
+    background-position: center; /* Canh chỉnh vị trí của background image */
+
 }
 
 .card-icon{
@@ -344,6 +363,8 @@ h2 strong, h1 strong {
 }
 
 .service-text{
+    font-weight: 600;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     text-align: center;
     padding: 0 20px;
     z-index: 1;
@@ -404,8 +425,7 @@ h2 strong, h1 strong {
     width: 500px;
     height: 500px;
     border-radius: 50%;
-    background: var(--sphere-gradient-one);
-    right: -250px;
+    right: -200px;
 }
 
 
@@ -423,9 +443,9 @@ h2 strong, h1 strong {
 }
 
 .book-now-img{
-    position: absolute;
-    width: 45%;
-    right: 100px;
+    position: relative;
+    width: 50%;
+    right: 0px;
 }
 
 .book-content{
@@ -445,13 +465,13 @@ h2 strong, h1 strong {
     width: 300px;
     opacity: 0.8;
     line-height: 25px;
-    margin: 30px 0;
+    margin: 25px 0;
     display: block;
     text-align: center;
     line-height: 25px;
     font-size: 1.2rem;
-    color: #50623A;
-    font-weight: 600;
+    color: #3d3d3f;
+    font-weight: 500;
     text-align: left;
 }
 
@@ -459,17 +479,23 @@ h2 strong, h1 strong {
     position: relative;
     align-items: center;
     padding: 10px 20px;
-    background: #000;
+    background: #b43620;
     color: #fff;
     font-size: 18px;
     display: inline-flex;
     height: 52px;
-    border: 1.5px solid #494b52;
-    border-radius: 16px;
+    border: 0px solid #494b52;
+    border-radius: 5px;
     padding: 0 28px 2px;
     font-weight: 700;
     cursor: pointer;
     white-space: nowrap;
+    transition: 0.5s ease-in-out;
+
+}
+
+.book-now:hover {
+    box-shadow: 0 2px 8px rgba(0,0,0,.8);
 }
 
 .bg-circle-2{
@@ -486,7 +512,9 @@ h2 strong, h1 strong {
 .footer{
     width: 100%;
     padding: 100px 10vw;
-    background: #12161b;
+    background-image: url(./Img/preview.jpg);
+    background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -497,6 +525,8 @@ h2 strong, h1 strong {
 .footer-logo{
     width: 200px;
     opacity: 1;
+    background-color: #f6f6f6;
+    border-radius: 15px;
 }
 
 .footer-text{
@@ -521,9 +551,14 @@ h2 strong, h1 strong {
     padding: 10px 0;
 }
 
+.icon {
+    font-size: 4rem;
+}
+
+
 /* tab view */
 
-@media screen and (max-width: 996px) {
+@media (min-width: 740px) and (max-width: 1023px) {
     .link-item{
         margin: 0 10px;
     }
@@ -542,7 +577,7 @@ h2 strong, h1 strong {
         grid-row: span 2;
     }
     .serives-grid{
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
     .service-card:nth-child(3), .service-card:nth-child(4){
         margin-top: 0;
@@ -551,7 +586,8 @@ h2 strong, h1 strong {
         columns: 2;
     }
     .book-now-img{
-        width: 40%;
+        width: 100%;
+        right: 0;
     }
     .footer-logo{
         width: 70px;
@@ -559,17 +595,31 @@ h2 strong, h1 strong {
     .footer-text{
         font-size: 16px;
     }
+    .hero-section-sub-heading {
+        margin: 20px;
+    }
+    .book-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+
 }
 
-/* much smaller device */
+@media screen and (max-width:740px){
 
-@media screen and (max-width:798px){
+    .hero-section-title {
+        margin: 20px;
+    }
     .book-section {
         display: flex;
         flex-direction: column;
     }
     .navbar{
-        height: auto;
+        height: 50px;
+        top: 0;
     }
 
     .link-item{
@@ -633,7 +683,6 @@ h2 strong, h1 strong {
     }
     .book-now-img{
         width: 100%;
-        opacity: 0.3 !important;
     }
     .book-content{
         width: 100%;
@@ -643,8 +692,44 @@ h2 strong, h1 strong {
     .book-now-title, .book-now-text{
         width: 100%;
     }
+    .links-container {
+        display: none;
+    }
+    .book-now-title {
+        font-size: 50px;
+        line-height: 60px;
+    }
+    .explore-section{
+        position: relative;
+        width: 100%;
+        padding: 80px 7vw;
+        color: #0a0d13;
+    }
 }
 
-.icon {
-    font-size: 4rem;
+colorYellow {
+    color: #cc9e13 !important;
 }
+
+
+.colorYellow {
+    color: #cc9e13 !important;
+}
+
+redColor {
+    color: #b43620 !important;
+}
+
+.redColor {
+    color: #b43620 !important;
+
+}
+
+.vietnamImg {
+    width: 70px;
+    height: auto;
+    margin-bottom: -12px;
+}
+
+
+
