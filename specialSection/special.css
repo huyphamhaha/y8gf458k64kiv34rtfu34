@@ -1,0 +1,139 @@
+/* Tùy chỉnh thanh cuộn */
+::-webkit-scrollbar {
+    width: 7px; /* Chiều rộng của thanh cuộn */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #494b52; /* Màu nền của "nút" thanh cuộn */
+    border-radius: 6px; /* Độ cong góc của "nút" thanh cuộn */
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;;
+}
+
+:root{
+    --gradient-top: linear-gradient(0deg, rgba(22, 24, 19, 0) 0%, rgba(22, 24, 19, 0.1) 36.98%, rgba(22, 24, 19, 0.3) 70.83%, rgba(22, 24, 19, 0.5) 100%);
+--gradient-bottom: linear-gradient(180deg, rgba(22, 24, 19, 0) 0%, rgba(22, 24, 19, 0.2) 21.88%, rgba(22, 24, 19, 0.4) 41.67%, rgba(22, 24, 19, 0.7) 61.98%, rgba(22, 24, 19, 0.8) 78.12%, #161813 100%);
+
+    --sphere-gradient-one: radial-gradient(50% 50% at 20% 25%, #686868 0%, #403F3F 35%, #222222 70%, #000000 100%);
+    --sphere-gradient-two: radial-gradient(51.04% 51.04% at 18.94% 26.18%, #686868 0%, #403F3F 36.98%, #222222 70.83%, #000000 100%);
+    --system-ui: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+html{
+    scroll-behavior: smooth;
+    list-style-type: none;
+}
+
+
+body{
+    font-family: var(--system-ui);
+    background-color: #0a0d13;
+    overflow-x: hidden;
+}
+
+h2 strong, h1 strong {
+    background: -webkit-linear-gradient(45deg, #5ebbff -33%, #a174ff 69%);
+    background-image: linear-gradient(260deg, rgb(0, 36, 167) 0%, rgb(35, 0, 135) 50%, rgb(54, 0, 80) 80%);
+    background-color: rgb(24, 26, 27);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.text-highlight {
+    -webkit-text-fill-color: transparent;
+    background: -webkit-linear-gradient(45deg, #5ebbff -33%, #a174ff 69%);
+    background-color: initial;
+    background-clip: text;
+}
+
+.explore-section{
+    position: relative;
+    width: 100%;
+    padding: 80px 10vw;
+    color: #0a0d13;
+}
+
+.section-title{
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+    color: #ffffff;
+}
+
+.section-para{
+    max-width: 900px;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    line-height: 25px;
+    font-size: 1.2rem;
+    color: #e6deb7;
+    font-weight: 640;
+}
+
+.tours-container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 20px;
+    margin-top: 100px;
+}
+
+.tour-card{
+    width: 100%;
+    height: 400px;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 0;
+    overflow: hidden;
+    padding: 10px;
+    display: flex;
+    align-items: end;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.tour-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .5s;
+    z-index: -1;
+}
+
+.tour-card:hover .tour-img{
+    opacity: 0.5;
+    transform: scale(1.1);
+}
+
+.tour-name{
+    font-weight: 700;
+    color: #fff;
+    -webkit-text-stroke: 0.2px #282828;
+}
+
+
+
+
+
