@@ -1,6 +1,6 @@
 @font-face {
     font-family: MyCustomFont;
-    src: url('/specialSection/NVN\ Brushwell\ Regular.ttf') format('truetype');
+    src: url('./NVN\ Brushwell\ Regular.ttf') format('truetype');
 }
 
 
@@ -20,7 +20,7 @@
   }
 
 
-  
+
 body,html{
 	margin:0;
 	padding:0;
